@@ -6,5 +6,5 @@ void MessageService::send(std::string message) {
 }
 
 void MessageService::onReceive(Packet *packet) {
-    std::cout << "MesaageService: received \"" << packet->dataString() << "\" from " << packet->srcAddress().toString() << ":" << packet->srcPort() << std::endl;
+    std::cout << "MessageService: received \"" << packet->dataString() << "\" from " << packet->srcAddress().toString() << ":" << packet->srcPort() << std::endl;
 }
