@@ -58,9 +58,10 @@ int main() {
 
   // 토폴로지는 다음 그림과 같다:
   //
-  //   echoServer
+
+  //   echoServer   (a)
   //       |
-  //     router0
+  //     router0    (b)
   //      /   |
   // router1  router2
   //      \   |

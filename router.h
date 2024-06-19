@@ -13,6 +13,12 @@ public:
 class Router : public Node {
 protected:
   std::vector<RoutingEntry> routingTable_;
+
+  void onReceive(Packet *packet) override;
+  
+public:
+  ~Router();
+  int routingTableSize() { return routingTable_.size(); }
 };
 
 #endif

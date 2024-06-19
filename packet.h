@@ -45,6 +45,8 @@ public:
     return str;
   }
 
+  int dataSize() { return data_.size(); }
+
 private:
   Address srcAddress_;
   Address destAddress_;
